@@ -1,0 +1,210 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+.shapes {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20rem;
+}
+.circle1 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(241, 134, 241);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(241, 134, 241),
+    -1px -1px 1 15px rgb(241, 134, 241);
+}
+.animation.start1 {
+  animation: glowcircle1 0.3s linear 0s infinite alternate;
+}
+
+@keyframes glowcircle1 {
+  from {
+    box-shadow: 1px 1px 15px rgb(241, 134, 241),
+      -1px -1px 1 15px rgb(241, 134, 241);
+
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+
+.circle2 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(94, 54, 27);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(94, 54, 27), -1px -1px 15px rgb(94, 54, 27);
+  opacity: 1;
+}
+.animation.start2 {
+  animation: glowcircle2 0.3s linear 0s infinite alternate;
+}
+@keyframes glowcircle2 {
+  from {
+    box-shadow: 1px 1px 15px rgb(94, 54, 27), -1px -1px 15px rgb(94, 54, 27);
+
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+.circle3 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(235, 87, 18);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(235, 87, 18), -1px -1px 15px rgb(235, 87, 18);
+  opacity: 1;
+}
+.animation.start3 {
+  animation: glowcircle3 0.3s linear 0s infinite alternate;
+}
+@keyframes glowcircle3 {
+  from {
+    box-shadow: 1px 1px 15px rgb(235, 87, 18), -1px -1px 15px rgb(235, 87, 18);
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+.circle4 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(100, 99, 8);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(100, 99, 8), -1px -1px 15px rgb(100, 99, 8);
+  opacity: 1;
+}
+.animation.start4 {
+  animation: glowcircle4 0.3s linear 0s infinite alternate;
+}
+@keyframes glowcircle4 {
+  from {
+    box-shadow: 1px 1px 15px rgb(100, 99, 8), -1px -1px 15px rgb(100, 99, 8);
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+.circle5 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(167, 177, 31);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(167, 177, 31), -1px -1px 15px rgb(167, 177, 31);
+  opacity: 1;
+}
+.animation.start5 {
+  animation: glowcircle5 0.3s linear 0s infinite alternate;
+}
+@keyframes glowcircle5 {
+  from {
+    box-shadow: 1px 1px 15px rgb(167, 177, 31), -1px -1px 15px rgb(167, 177, 31);
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+.circle6 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(204, 153, 204);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(204, 153, 204), -1px -1px 15px rgb(204, 153, 204);
+  opacity: 1;
+}
+.animation.start6 {
+  animation: glowcircle6 0.3s linear 0s infinite alternate;
+}
+@keyframes glowcircle6 {
+  from {
+    box-shadow: 1px 1px 15px rgb(204, 153, 204),
+      -1px -1px 15px rgb(204, 153, 204);
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+.circle7 {
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(250, 34, 250);
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px rgb(250, 34, 250), -1px -1px 15px rgb(250, 34, 250);
+  opacity: 1;
+}
+.animation.start7 {
+  animation: glowcircle7 0.3s linear 0s infinite alternate;
+}
+
+@keyframes glowcircle7 {
+  from {
+    box-shadow: 1px 1px 15px rgb(250, 34, 250), -1px -1px 15px rgb(250, 34, 250);
+    opacity: 1;
+  }
+  to {
+    box-shadow: none;
+    opacity: 0.5;
+  }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 50rem;
+  margin-top: 10rem;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(177, 123, 123);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #e276e6;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
